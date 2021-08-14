@@ -1,0 +1,12 @@
+
+version: '3.7'
+
+services:
+    springproject:
+        build:
+            context: .
+            dockerfile: Dockerfile.nextjs
+        image: nextjs_green:0.1
+        ports: 
+            - "3002:3000"
+        container_name: nextjs_green

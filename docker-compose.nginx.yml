@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: Dockerfile.nginx
+        image: nextjs/nginx:0.1
+        container_name: nginx_nextjs
+        network_mode: "host"
