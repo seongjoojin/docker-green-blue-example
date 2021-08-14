@@ -6,5 +6,7 @@ services:
             context: .
             dockerfile: Dockerfile.nginx
         image: nextjs/nginx:0.1
+        ports: 
+            - "8080:80"
         container_name: nginx_nextjs
         network_mode: "host"
