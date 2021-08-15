@@ -1,11 +1,14 @@
 # 실행 방법
 
-서버에서 미리 샐행
+서버에서 미리 실행 (docker)
+
 ```bash
-docker-compose -p nginx -f docker-compose.nginx.yml up -d --build
+$ docker-compose -p nginx -f docker-compose.nginx.yml up -d --build
 ```
 
-ci/cd를 통해서 실행
+ci/cd를 통해서 배포
+
 ```bash
-deploy.sh
+$ chmod +x ./deploy.sh
+$ ./deploy.sh
 ```

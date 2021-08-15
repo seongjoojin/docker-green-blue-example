@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_APP_NAME=nextjs
+DOCKER_APP_NAME=nextjsproject
 
 EXIST_BLUE=$(/usr/local/bin/docker-compose -p ${DOCKER_APP_NAME}-blue -f docker-compose.blue.yml ps | grep Up)
 
