@@ -1,5 +1,9 @@
 #!/bin/bash
 
+docker container prune -f
+docker image prune -f
+docker volume prune -f
+
 DOCKER_APP_NAME=nextjsproject
 
 EXIST_BLUE=$(/usr/local/bin/docker-compose -p ${DOCKER_APP_NAME}-blue -f docker-compose.blue.yml ps | grep Up)
