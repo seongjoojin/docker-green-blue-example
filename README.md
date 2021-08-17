@@ -33,8 +33,10 @@ ec2 ip에 접속해 확인
 
 # nginx setting & restart
 $ sudo nano /etc/nginx/nginx.conf
+```
 
 `nginx.conf`
+
 ```
 user www-data;
 worker_processes auto;
@@ -82,6 +84,7 @@ http {
 }
 ```
 
+```bash
 $ sudo service nginx restart
 
 
