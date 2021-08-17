@@ -1,8 +1,6 @@
 #!/bin/bash
 
-docker container prune -f
-docker image prune -f
-docker volume prune -f
+docker system prune -a -f
 
 DOCKER_APP_NAME=nextjsproject
 
