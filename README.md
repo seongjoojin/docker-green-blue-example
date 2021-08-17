@@ -33,6 +33,7 @@ ec2 ip에 접속해 확인
 
 # nginx setting & restart
 $ sudo nano /etc/nginx/nginx.conf
+$ sudo service nginx -s reload
 ```
 
 `nginx.conf`
