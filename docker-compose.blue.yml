@@ -10,3 +10,11 @@ services:
         ports: 
             - "3001:3000"
         container_name: nextjs_blue
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.50'
+                    memory: 50M
+                reservations:
+                    cpus: '0.25'
+                    memory: 20M
